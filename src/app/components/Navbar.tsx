@@ -6,7 +6,7 @@ import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween padding-container py-2 px-3 bg-white fixed w-full top-0">
+    <nav className="flexBetween padding-container py-2 px-3 bg-white fixed w-full top-0 z-10">
       <Link href="/">
         <Image src="/logo.png" alt="logo" width={40} height={40} className="rounded-lg"/>
       </Link>
