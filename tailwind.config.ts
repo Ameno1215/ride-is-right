@@ -20,7 +20,12 @@ const config: Config = {
       },
       spacing: {
         'taille' : '300px',
+        '400' : '400px'
+      },
+      borderRadius: {
+        xl: '1.5rem',
       }
+      
     },
   },
   plugins: [],

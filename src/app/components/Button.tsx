@@ -4,15 +4,14 @@ type ButtonProps = {
   type: 'button' | 'submit';
   title: string;
   icon?: string;
-  // ? sert a rendre le paramètre potionnel
-  variant: string;
-  full?: boolean;
+  // ? sert a rendre le paramètre optionnel
+  variant: string;$
 }
 
 const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
   return (
     <button
-    className={`flexCenter gap-3 rounded-full ${variant} ${full && 'w-full'}`}
+    className={`flexCenter gap-3 rounded-full ${variant}`}
       type={type}
     >
       {/* icon && veut dire si il y a icon en paramètre alors */}

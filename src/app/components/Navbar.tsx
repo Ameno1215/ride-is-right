@@ -1,10 +1,23 @@
+'use client'
 import { NAV_LINKS } from "../constants"
 import Image from "next/image"
-import { useEffect, useState } from "react";
 import Link from "next/link"
 import Button from "./Button"
+import Connexion from "./connexion"
+import { useState } from "react";
+import Hamburger from "./hamburger"
 
 const Navbar = () => {
+  const [showPopupConnexion, setShowPopupConnexion] = useState(false);
+  const [showPopupHamburger, setShowPopupHamburger] = useState(false);
+
+  const handleTogglePopupConnexion = () => {
+    setShowPopupConnexion(!showPopupConnexion);
+  };
+
+  const handleTogglePopupHamburger = () => {
+    setShowPopupHamburger(!showPopupHamburger);
+  };
   return (
     <nav className="flexBetween padding-container py-2 px-3 bg-white fixed w-full top-0 z-10">
       <Link href="/">
@@ -19,7 +32,10 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="lg:flexCenter hidden">
+      <Connexion isOpen={showPopupConnexion} onClose={handleTogglePopupConnexion} />
+      <Hamburger isOpen={showPopupHamburger} onClose={handleTogglePopupHamburger} />
+
+      <div className="lg:flexCenter hidden" onClick={handleTogglePopupConnexion}>
         <Button
           type="button"
           title="Connexion"
@@ -28,7 +44,8 @@ const Navbar = () => {
         />
       </div>
 
-      <Image 
+
+      <Image onClick={handleTogglePopupHamburger}
         src="menu.svg"
         alt="menu"
         width={30}

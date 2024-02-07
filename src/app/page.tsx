@@ -21,6 +21,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center text-center text-white z-10">
                 <h1 className={`text-8xl ${styles.animateFadeInUp}`}>Ride is Right</h1>
             </div>
+
         </div>
 
     </div>
