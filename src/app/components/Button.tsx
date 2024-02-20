@@ -5,10 +5,10 @@ type ButtonProps = {
   title: string;
   icon?: string;
   // ? sert a rendre le paramètre optionnel
-  variant: string;$
+  variant: string;
 }
 
-const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
+const Button = ({ type, title, icon, variant}: ButtonProps) => {
   return (
     <button
     className={`flexCenter gap-3 rounded-full ${variant}`}

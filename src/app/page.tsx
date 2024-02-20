@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./styles/acceuil.css";
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
                 height={300}
             />
             <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center text-center text-white z-10">
-                <h1 className={`text-8xl ${styles.animateFadeInUp}`}>Ride is Right</h1>
+                <h1 className="text-8xl">Ride is Right</h1>
             </div>
 
         </div>
