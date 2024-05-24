@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function partenaires() {
     return (
 
-      <main className="container mx-auto py-8">
+      <div className="container mx-auto py-10">
 
-          <div className="flex items-center bg-white p-4 shadow-md mb-4">
+          <div className="flex items-center bg-white p-4 shadow mb-10">
               <div className="relative w-3/5 h-auto">
                   <a href="https://www.racecompany.fr/fr/" target="_blank" rel="noopener noreferrer">
                       <img src="/logoRace.svg" alt="Image 1" className="w-full h-full object-cover" />
@@ -24,7 +24,7 @@ export default function partenaires() {
               </div>
           </div>
             
-          <div className="flex items-center bg-white p-4 shadow-md mb-4">
+          <div className="flex items-center bg-white p-4 shadow mb-10">
               <div className="relative w-3/5 h-auto">
                   <a href="https://www.continental-tires.com/fr/fr/" target="_blank" rel="noopener noreferrer">
                       <img src="/continental.jpg" alt="Image 2" className="w-full h-full object-cover" />
@@ -43,7 +43,7 @@ export default function partenaires() {
               </div>
           </div>
 
-          <div className="flex items-center bg-white p-4 shadow-md mb-4">
+          <div className="flex items-center bg-white p-4 shadow mb-10">
               <div className="relative w-3/5 h-auto">
                   <a href="https://www.alltricks.fr/" target="_blank" rel="noopener noreferrer">
                       <img src="/alltricks.png" alt="Image 2" className="w-full h-full object-cover" />
@@ -62,7 +62,7 @@ export default function partenaires() {
               </div>
           </div>
 
-          <div className="flex items-center bg-white p-4 shadow-md mb-4">
+          <div className="flex items-center bg-white p-4 shadow mb-10">
               <div className="relative w-3/5 h-auto">
                   <a href="https://galfer.eu/" target="_blank" rel="noopener noreferrer">
                       <img src="/galfer.jpg" alt="Image 2" className="w-full h-full object-cover" />
@@ -80,7 +80,7 @@ export default function partenaires() {
               </div>
           </div>
 
-      </main>
+      </div>
       
     )
   }
