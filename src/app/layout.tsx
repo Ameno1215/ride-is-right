@@ -1,6 +1,7 @@
 import Footer from "./components/Footer"
 import "./styles/globals.css";
 import Navbar from "./components/Navbar"
+import { Providers } from "./provider";
 
 export const metadata = {
   title: 'Next.js',
@@ -17,7 +18,7 @@ export default function RootLayout({
       <body>
         <Navbar/>
         <main>
-          {children} 
+          <Providers>{children} </Providers>
         </main>
         <Footer />
       </body>

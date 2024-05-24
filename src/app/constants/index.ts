@@ -4,7 +4,7 @@ export const NAV_LINKS = [
     { href: '/membres', key: 'Membres', label: 'Membres' },
     { href: '/calendrier', key: 'Calendrier', label: 'Calendrier' },
     { href: '/', key: 'Media', label: 'Media' },
-    { href: '/', key: 'Partenaires', label: 'Partenaires' },
+    { href: '/partenaires', key: 'Partenaires', label: 'Partenaires' },
   ];
 
 
