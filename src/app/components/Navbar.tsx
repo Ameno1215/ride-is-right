@@ -6,6 +6,7 @@ import Button from "./Button"
 import Connexion from "./connexion"
 import { useState } from "react";
 import Hamburger from "./hamburger"
+import { LoginButton, LogoutButton } from "./auth"
 
 const Navbar = () => {
   const [showPopupConnexion, setShowPopupConnexion] = useState(false);
@@ -34,6 +35,8 @@ const Navbar = () => {
 
       <Connexion isOpen={showPopupConnexion} onClose={handleTogglePopupConnexion} />
       <Hamburger isOpen={showPopupHamburger} onClose={handleTogglePopupHamburger} />
+      <LoginButton></LoginButton>
+      <LogoutButton></LogoutButton>
 
       <div className="lg:flexCenter hidden" onClick={handleTogglePopupConnexion}>
         <Button

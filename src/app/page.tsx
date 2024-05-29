@@ -68,7 +68,7 @@ export default async function Home() {
             </div>
 
 
-            {/* <pre>{JSON.stringify(session)}</pre> */}
+            <pre>{JSON.stringify(session)}</pre>
 
 
         </div>
