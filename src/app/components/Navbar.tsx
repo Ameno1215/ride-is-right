@@ -24,6 +24,7 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/logo.png" alt="logo" width={40} height={40} className="rounded-lg"/>
       </Link>
+    
 
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
@@ -35,8 +36,8 @@ const Navbar = () => {
 
       <Connexion isOpen={showPopupConnexion} onClose={handleTogglePopupConnexion} />
       <Hamburger isOpen={showPopupHamburger} onClose={handleTogglePopupHamburger} />
-      {/* <LoginButton></LoginButton>
-      <LogoutButton></LogoutButton> */}
+      <LoginButton></LoginButton>
+      <LogoutButton></LogoutButton>
 
       <div className="lg:flexCenter hidden" onClick={handleTogglePopupConnexion}>
         <Button
