@@ -35,8 +35,8 @@ const Navbar = () => {
 
       <Connexion isOpen={showPopupConnexion} onClose={handleTogglePopupConnexion} />
       <Hamburger isOpen={showPopupHamburger} onClose={handleTogglePopupHamburger} />
-      <LoginButton></LoginButton>
-      <LogoutButton></LogoutButton>
+      {/* <LoginButton></LoginButton>
+      <LogoutButton></LogoutButton> */}
 
       <div className="lg:flexCenter hidden" onClick={handleTogglePopupConnexion}>
         <Button
