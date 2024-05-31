@@ -6,7 +6,7 @@ import Link from "next/link";
 const photos = [
     {
       src: "/loicbruni.jpg",
-      description: "Jean -baptiste Président",
+      description: "Jean-baptiste Président",
       key: "1"
     },
     {
@@ -23,28 +23,26 @@ export default async function Home() {
 
 
     return (
-        <div>
+        <div className="w-full">
             <div className="flex items-center justify-center mb-10">
                 <div className="relative w-full z-0">
-                    <div>
+                <div className="relative">
                         <Image
-                            src="/image_Acceuil.jpg" 
+                            src="/image_Acceuil.jpg"
                             alt="Rien"
                             sizes="100vw"
                             style={{
                                 width: '100%',
                                 height: 'auto'
                             }}
-                            // layout="responsive"
                             width={500}
                             height={300}
                         />
-                        {/* <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center text-center text-white z-1">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center text-center text-white">
                             <h1 className="text-8xl">Ride is Right</h1>
-                        </div> */}
+                        </div>
                     </div>
-
-                    <h1 className="flex justify-center text-5xl m-16 pt-10">
+                    <h1 className="flex justify-center text-4xl m-16 pt-10 font-bold">
                         L'association
                     </h1>
 
@@ -84,29 +82,41 @@ export default async function Home() {
                 {/* <pre>{JSON.stringify(session)}</pre> */}
 
             </div>
-
-        <div className="flex min-h-[40vh] w-full px-5">
-            <div className="w-1/2 p-4 sticky top-0 flex flex-col justify-center h-[60vh]">
-                <h1 className="text-2xl font-bold mb-4">Texte sur la gauche</h1>
-                <p>Voici un exemple de texte qui sera affiché sur le côté gauche de l'écran. Vous pouvez ajouter autant de contenu que nécessaire ici.</p>
-            </div>
             
-            <div className="w-1/2 p-4 overflow-y-auto h-96">
-            {photos.map(photo => (
-                <div key={photo.key} className="mb-8 ">
-                
-                <Image 
-                    src={photo.src} 
-                    alt={photo.description} 
-                    width={300} 
-                    height={200} 
-                    className="object-cover rounded-lg w-full h-full" 
-                />
-                <p className="mt-2 text-lg text-center">{photo.description}</p>
-                </div>
-            ))}
-            </div>
+            <h1 className="flex justify-center text-4xl m-16 pt-10 font-bold">
+                Bureau restreint
+            </h1>
+
+            <div className="max-w-lg w-full mx-auto grid grid-cols-1 gap-8">
+        <div className="flex flex-col items-center">
+          <div className="w-full rounded-lg overflow-hidden mb-4">
+            <Image
+              src='/imageEnduro.jpg'
+              alt="Photo 1"
+              layout="responsive"
+              width={500}
+              height={750}
+              className="rounded-lg"
+            />
+          </div>
+          <p className="text-center text-lg font-medium">Jean-Baptiste</p>
+          <p className="text-center text-base font-medium">Président</p>
         </div>
+        <div className="flex flex-col items-center">
+          <div className="w-full rounded-lg overflow-hidden mb-4">
+            <Image
+              src='/loicbruni.jpg'
+              alt="Photo 2"
+              layout="responsive"
+              width={500}
+              height={750}
+              className="rounded-lg"
+            />
+          </div>
+          <p className="text-center text-lg font-medium">Niko</p>
+          <p className="text-center text-base font-medium">Trésorier</p>
+        </div>
+      </div>
         
     </div>
         

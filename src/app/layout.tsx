@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <Navbar/>
-        <main>
+        <main className="min-h-screen">
           <Providers>{children} </Providers>
         </main>
         <Footer />
